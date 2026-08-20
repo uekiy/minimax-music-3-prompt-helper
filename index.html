@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniMax Music 3 Prompt Helper</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Music Prompt Helper</h1>
+            <p>Generate structured captions for MiniMax Music 3</p>
+        </header>
+
+        <main>
+            <section class="card input-section">
+                <h2>1. Parameters</h2>
+                
+                <div class="form-group">
+                    <label for="genre">Genre / Style</label>
+                    <input type="text" id="genre" placeholder="e.g. J-Pop, Acoustic Ballad, Cyberpunk Synthwave">
+                    <div class="pill-container" data-target="genre">
+                        <button type="button" class="pill pastel-pink">J-Pop</button>
+                        <button type="button" class="pill pastel-peach">K-Pop</button>
+                        <button type="button" class="pill pastel-yellow">Acoustic Pop</button>
+                        <button type="button" class="pill pastel-mint">EDM</button>
+                        <button type="button" class="pill pastel-blue">Future Bass</button>
+                        <button type="button" class="pill pastel-lilac">Cyberpunk</button>
+                        <button type="button" class="pill pastel-gray">Synthwave</button>
+                        <button type="button" class="pill pastel-aqua">Lo-Fi Hip Hop</button>
+                        <button type="button" class="pill pastel-pink">Rock</button>
+                        <button type="button" class="pill pastel-peach">Metal</button>
+                        <button type="button" class="pill pastel-yellow">Jazz</button>
+                        <button type="button" class="pill pastel-mint">Bossa Nova</button>
+                        <button type="button" class="pill pastel-blue">Classical</button>
+                        <button type="button" class="pill pastel-lilac">Orchestral Epic</button>
+                        <button type="button" class="pill pastel-gray">Celtic</button>
+                        <button type="button" class="pill pastel-aqua">Folk</button>
+                        <button type="button" class="pill pastel-pink">R&B</button>
+                        <button type="button" class="pill pastel-peach">Soul</button>
+                        <button type="button" class="pill pastel-yellow">Funk</button>
+                        <button type="button" class="pill pastel-mint">Reggae</button>
+                        <button type="button" class="pill pastel-blue">Chiptune</button>
+                        <button type="button" class="pill pastel-lilac">Vaporwave</button>
+                        <!-- BGM / Video specific genres -->
+                        <button type="button" class="pill pastel-gray">Corporate</button>
+                        <button type="button" class="pill pastel-aqua">Cinematic</button>
+                        <button type="button" class="pill pastel-mint">Ambient</button>
+                        <button type="button" class="pill pastel-peach">Vlog / Lifestyle</button>
+                        <button type="button" class="pill pastel-yellow">Documentary</button>
+                        <button type="button" class="pill pastel-pink">Trailer Music</button>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="mood">Mood / Emotion</label>
+                    <input type="text" id="mood" placeholder="e.g. Energetic, Melancholy, Uplifting">
+                    <div class="pill-container" data-target="mood">
+                        <button type="button" class="pill pastel-yellow">Energetic</button>
+                        <button type="button" class="pill pastel-aqua">Uplifting</button>
+                        <button type="button" class="pill pastel-peach">Happy</button>
+                        <button type="button" class="pill pastel-pink">Romantic</button>
+                        <button type="button" class="pill pastel-blue">Melancholy</button>
+                        <button type="button" class="pill pastel-gray">Sad</button>
+                        <button type="button" class="pill pastel-lilac">Dreamy</button>
+                        <button type="button" class="pill pastel-mint">Relaxing</button>
+                        <button type="button" class="pill pastel-gray">Dark</button>
+                        <button type="button" class="pill pastel-lilac">Mysterious</button>
+                        <button type="button" class="pill pastel-pink">Epic</button>
+                        <button type="button" class="pill pastel-peach">Aggressive</button>
+                        <button type="button" class="pill pastel-yellow">Nostalgic</button>
+                        <button type="button" class="pill pastel-mint">Chill</button>
+                        <button type="button" class="pill pastel-blue">Hopeful</button>
+                        <!-- BGM specific moods -->
+                        <button type="button" class="pill pastel-yellow">Inspiring</button>
+                        <button type="button" class="pill pastel-peach">Upbeat</button>
+                        <button type="button" class="pill pastel-gray">Neutral</button>
+                        <button type="button" class="pill pastel-pink">Dramatic</button>
+                        <button type="button" class="pill pastel-lilac">Suspenseful</button>
+                        <button type="button" class="pill pastel-aqua">Sentimental</button>
+                        <button type="button" class="pill pastel-mint">Quirky</button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="vocals">Vocal Details</label>
+                    <input type="text" id="vocals" placeholder="e.g. Female vocal, powerful, breathy">
+                    <div class="pill-container" data-target="vocals">
+                        <button type="button" class="pill pastel-pink">Female vocal</button>
+                        <button type="button" class="pill pastel-blue">Male vocal</button>
+                        <button type="button" class="pill pastel-gray">Instrumental</button>
+                        <button type="button" class="pill pastel-peach">Powerful</button>
+                        <button type="button" class="pill pastel-mint">Breathy</button>
+                        <button type="button" class="pill pastel-aqua">Clear</button>
+                        <button type="button" class="pill pastel-yellow">Raspy</button>
+                        <button type="button" class="pill pastel-lilac">Whispering</button>
+                        <button type="button" class="pill pastel-pink">Choir</button>
+                        <button type="button" class="pill pastel-peach">Duet</button>
+                        <button type="button" class="pill pastel-gray">Vocoder</button>
+                        <button type="button" class="pill pastel-blue">Deep voice</button>
+                        <button type="button" class="pill pastel-mint">High pitch</button>
+                        <!-- BGM specific vocals -->
+                        <button type="button" class="pill pastel-aqua">Wordless</button>
+                        <button type="button" class="pill pastel-yellow">Humming</button>
+                        <button type="button" class="pill pastel-lilac">Backing Vocals</button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="lyrics">Lyrics & Tags</label>
+                    <div class="tag-buttons">
+                        <button type="button" class="tag-btn" data-tag="[intro]">intro</button>
+                        <button type="button" class="tag-btn" data-tag="[verse]">verse</button>
+                        <button type="button" class="tag-btn" data-tag="[chorus]">chorus</button>
+                        <button type="button" class="tag-btn" data-tag="[bridge]">bridge</button>
+                        <button type="button" class="tag-btn" data-tag="[outro]">outro</button>
+                    </div>
+                    <textarea id="lyrics" rows="6" placeholder="[intro]&#10;Guitar starts softly...&#10;[verse]&#10;Write your lyrics here..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="api-provider">API Provider</label>
+                    <select id="api-provider" style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: #fafafa; font-family: inherit; font-size: 0.9rem; margin-bottom: 0.5rem;">
+                        <option value="gemini">Gemini (Google)</option>
+                        <option value="openai">OpenAI (ChatGPT)</option>
+                        <option value="anthropic">Anthropic (Claude)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="api-key">API Key</label>
+                    <input type="password" id="api-key" placeholder="Enter API key for the selected provider">
+                    <label class="remember-key-option" for="remember-api-key">
+                        <input type="checkbox" id="remember-api-key">
+                        Remember this key in this browser
+                    </label>
+                    <small class="security-note">
+                        Saved keys use local storage and are not encrypted. Use a restricted key on a trusted device.
+                    </small>
+                    <button type="button" id="clear-api-keys-btn" class="text-btn">Clear saved API keys</button>
+                </div>
+
+                <button id="generate-btn" class="primary-btn">Generate Prompt</button>
+            </section>
+
+            <section class="card output-section">
+                <h2>2. Result</h2>
+                
+                <div class="form-group">
+                    <label for="out-caption">Structured Caption</label>
+                    <textarea id="out-caption" rows="6" readonly placeholder="Generated caption will appear here..."></textarea>
+                    <button class="copy-btn" data-target="out-caption">Copy Caption</button>
+                </div>
+
+                <div class="form-group">
+                    <label for="out-lyrics">Formatted Lyrics</label>
+                    <textarea id="out-lyrics" rows="6" readonly placeholder="Formatted lyrics will appear here..."></textarea>
+                    <button class="copy-btn" data-target="out-lyrics">Copy Lyrics</button>
+                </div>
+
+                <div class="actions">
+                    <button id="download-json-btn" class="secondary-btn" disabled>Download Prompt JSON</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            Unofficial community tool. Not affiliated with MiniMax or ComfyUI.
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
