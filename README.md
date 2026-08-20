@@ -13,6 +13,10 @@ It can also download both fields as a small prompt JSON file.
 
 > This is an independent community project by [@uekiy](https://github.com/uekiy). It is not affiliated with, endorsed by, or supported by MiniMax or ComfyUI.
 
+![MiniMax Music 3 Prompt Helper screenshot](docs/screenshot.png)
+
+*The parameter editor with genre, mood, vocal, and lyric-tag suggestions.*
+
 ## Features
 
 - Genre, mood, and vocal suggestion buttons
