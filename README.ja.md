@@ -13,6 +13,10 @@ MiniMax Music 3をComfyUIワークフローで使う際に、構造化された�
 
 > [@uekiy](https://github.com/uekiy)による独立したコミュニティープロジェクトです。MiniMaxおよびComfyUIの公式製品ではなく、提携・承認・サポートを受けたものではありません。
 
+![MiniMax Music 3 Prompt Helperのスクリーンショット](docs/screenshot.png)
+
+*ジャンル、ムード、ボーカル、歌詞タグの候補を備えたパラメーター編集画面。*
+
 ## 主な機能
 
 - ジャンル、ムード、ボーカル表現の候補ボタン
